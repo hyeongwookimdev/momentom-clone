@@ -8,6 +8,79 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <section class="side-bar">
+      <div class="side-bar__elements">
+        <i class="fa-brands fa-github"></i>
+      </div>
+      <div class="side-bar__elements">
+        <img src="https://nomadcoders.co/m.png" />
+        <!--<img src="https://nomadcoders.co/m.svg" />-->
+      </div>
+      <div class="side-bar__elements">
+        <img src="https://developer.mozilla.org/favicon-48x48.cbbd161b.png" />
+      </div>
+      <div class="side-bar__elements">
+        <i class="fa-brands fa-discord"></i>
+      </div>
+      <div class="side-bar__elements">
+        <i class="fa-solid fa-mug-hot"></i>
+      </div>
+      <div class="side-bar__elements">
+        <i class="fa-brands fa-spotify"></i>
+      </div>
+      <div class="side-bar__elements">
+        <img src="https://flexboxfroggy.com/images/frog-green.svg" alt="" />
+      </div>
+      <div class="side-bar__elements">
+        <img src="https://cssgridgarden.com/images/carrots.svg" alt="" />
+      </div>
+      <div class="side-bar__elements">
+        <i class="fa-solid fa-gear"></i>
+      </div>
+    </section>
+    <section class="main-screen">
+      <header class="header">
+        <div class="header__column">
+          <section class="main-screen__header__search">
+            <form>
+              <button><i class="fa-solid fa-magnifying-glass"></i></button>
+              <input
+                placeholder="Enter your search term..."
+                type="search"
+                name="search"
+              />
+            </form>
+          </section>
+        </div>
+        <div class="header__column">
+          <section class="header__d-day">d-day</section>
+          <section class="header__weather">
+            <div class="header__weather__row">
+              <div class="header__weather__icon">icon</div>
+              <div class="header__weather__temp">temp</div>
+            </div>
+            <div class="header__weather__row">location</div>
+          </section>
+        </div>
+      </header>
+      <main class="main">
+        <section class="main__time">14:13</section>
+        <section class="main__greeting">Good afternoon, Hyeongwoo.</section>
+        <section class="main__today">Today is 2022.07.29</section>
+        <section class="main__todays-course">
+          Today's course: Vanilla JS #7.0~ #7.2
+        </section>
+        <section class="main__todays-chellenge">
+          Today's chellenge: Code Chellenge
+        </section>
+      </main>
+      <footer class="footer">
+        <button class="footer__changeBtn">background-change</button>
+        <section class="footer__quote">quote</section>
+        <form class="footer__todo-form">todo-list</form>
+      </footer>
+    </section>
+    <!--
     <form id="login-form" class="hidden">
       <input
         required
@@ -27,10 +100,20 @@
       <span></span>
       <span></span>
     </div>
+    <div id="weather">
+      <span></span>
+      <span></span>
+    </div>
+    -->
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c560ecab76.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

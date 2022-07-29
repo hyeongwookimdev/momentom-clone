@@ -32,8 +32,8 @@ const quotes = [
     author: "Erich Fromm",
   },
   {
-    quote: "고통은 인생의 최악이 아니다. 최악은 무관심이다.",
-    author: "Erich Fromm",
+    quote: "자기가 하는 모든 일에서 에너지가 정상일 때 수행 능력도 나아진다",
+    author: "Scott Adams",
   },
   {
     quote:
