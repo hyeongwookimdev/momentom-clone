@@ -125,12 +125,33 @@ i {
 }
 
 .main__time {
-  font-size: 150px;
+  font-size: 125px;
+  font-weight: 600;
 }
 
 .main__greeting {
   font-size: 50px;
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#login-form input {
+  width: 100%;
+  color: var(--text-color);
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 2px solid var(--text-color);
+  background-color: unset;
 }
 
 .main__today {

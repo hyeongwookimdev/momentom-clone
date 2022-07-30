@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <section class="side-bar">
+    <section class="side-bar hidden">
       <div class="side-bar__elements">
         <i class="fa-brands fa-github"></i>
       </div>
@@ -39,7 +39,7 @@
       </div>
     </section>
     <section class="main-screen">
-      <header class="header">
+      <header class="header hidden">
         <div class="header__column">
           <section class="main-screen__header__search">
             <form>
@@ -64,11 +64,22 @@
         </div>
       </header>
       <main class="main">
-        <section class="main__time">14:13</section>
-        <section class="main__greeting">Good afternoon, Hyeongwoo.</section>
-        <section class="main__today">Today is 2022.07.29</section>
-        <span class="main__courses__title">Schedule</span>
-        <section class="main__courses">
+        <section class="main__time hidden">
+          <h2 id="clock">00:00:00</h2>
+        </section>
+
+        <section class="main__greeting">
+          <span class="main__greeting__hello hidden"
+            >Hello, What's your name?</span
+          >
+          <form id="login-form" class="hidden">
+            <input required maxlength="15" type="text" />
+          </form>
+          <h1 id="greeting" class="hidden"></h1>
+        </section>
+
+        <span class="main__courses__title hidden">Schedule</span>
+        <section class="main__courses hidden">
           <div class="main__courses__schedule">
             <span>Youtube</span>
             <span>Week 2</span>
@@ -105,8 +116,8 @@
             <span>code-chellenge</span>
           </div>
         </section>
-        <span class="main__courses__title">Courses</span>
-        <section class="main__courses">
+        <span class="main__courses__title hidden">Courses</span>
+        <section class="main__courses hidden">
           <div class="main__courses__course">
             <i class="fa-brands fa-html5"></i>
           </div>
@@ -127,7 +138,7 @@
           </div>
         </section>
       </main>
-      <footer class="footer">
+      <footer class="footer hidden">
         <button class="footer__changeBtn">background-change</button>
         <section class="footer__quote">quote</section>
         <form class="footer__todo-form">todo-list</form>
