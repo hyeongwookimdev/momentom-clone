@@ -7,10 +7,13 @@ function onGeoOk(position) {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      const weather = document.querySelector("#weather span:first-child");
-      const city = document.querySelector("#weather span:last-child");
+      const city = document.querySelector(".header__weather__row:last-child");
+      const temp = document.querySelector(".header__weather__temp");
       city.innerText = data.name;
-      weather.innerText = `${data.weather[0].main} / ${data.main.temp}`;
+      temp.innerText = `${Math.floor(parseInt(data.main.temp))}℃`;
+      const weather = document.querySelector(".header__weather__icon");
+      const weatherIconCode = data.weather[0].icon;
+      weather.src = `http://openweathermap.org/img/wn/${weatherIconCode}@2x.png`;
     });
 }
 

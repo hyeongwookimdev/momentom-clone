@@ -56,10 +56,10 @@
           <section class="header__d-day">d-day</section>
           <section class="header__weather">
             <div class="header__weather__row">
-              <div class="header__weather__icon">icon</div>
-              <div class="header__weather__temp">temp</div>
+              <img class="header__weather__icon"></img>
+              <div class="header__weather__temp"></div>
             </div>
-            <div class="header__weather__row">location</div>
+            <div class="header__weather__row"></div>
           </section>
         </div>
       </header>
@@ -78,43 +78,15 @@
           <h1 id="greeting" class="hidden"></h1>
         </section>
 
-        <span class="main__courses__title hidden">Schedule</span>
+        
+
+        <span class="main__courses__title hidden">To Do List</span>
+        <form id="todo-form">
+          <input class="hidden" type="text" placeholder="" required />
+        </form>
+        <ul id="todo-list"></ul>
         <section class="main__courses hidden">
-          <div class="main__courses__schedule">
-            <span>Youtube</span>
-            <span>Week 2</span>
-            <span>5 weeks</span>
-          </div>
-          <div class="main__courses__schedule">
-            <span>7 / 25</span>
-            <span>#6.0 ~ #6.7</span>
-            <span>code-chellenge</span>
-          </div>
-          <div class="main__courses__schedule">
-            <span>7 / 25</span>
-            <span>#6.0 ~ #6.7</span>
-            <span>quiz</span>
-          </div>
-          <div class="main__courses__schedule">
-            <span>7 / 25</span>
-            <span>#6.0 ~ #6.7</span>
-            <span>code-chellenge</span>
-          </div>
-          <div class="main__courses__schedule">
-            <span>7 / 25</span>
-            <span>#6.0 ~ #6.7</span>
-            <span>code-chellenge</span>
-          </div>
-          <div class="main__courses__schedule">
-            <span>7 / 25</span>
-            <span>#6.0 ~ #6.7</span>
-            <span>code-chellenge</span>
-          </div>
-          <div class="main__courses__schedule">
-            <span>7 / 25</span>
-            <span>#6.0 ~ #6.7</span>
-            <span>code-chellenge</span>
-          </div>
+          
         </section>
         <span class="main__courses__title hidden">Courses</span>
         <section class="main__courses hidden">
@@ -140,8 +112,13 @@
       </main>
       <footer class="footer hidden">
         <button class="footer__changeBtn">background-change</button>
-        <section class="footer__quote">quote</section>
-        <form class="footer__todo-form">todo-list</form>
+        <section class="footer__quote">
+          <div id="quote">
+            <span></span>
+            <span></span>
+          </div>
+        </section>
+        <form class="footer__todo-form"></form>
       </footer>
     </section>
     <!--

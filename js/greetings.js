@@ -6,6 +6,7 @@ const hello = document.querySelector(".main__greeting__hello");
 const header = document.querySelector(".header");
 const sideBar = document.querySelector(".side-bar");
 const mainTime = document.querySelector(".main__time");
+const todoForm = document.querySelector("#todo-form input");
 const coursesTitle = document.querySelectorAll(".main__courses__title");
 const courses = document.querySelectorAll(".main__courses");
 const footer = document.querySelector(".footer");
@@ -26,6 +27,7 @@ function onLoginSubmit(event) {
   header.classList.remove(HIDDEN_CLASSNAME);
   sideBar.classList.remove(HIDDEN_CLASSNAME);
   mainTime.classList.remove(HIDDEN_CLASSNAME);
+  todoForm.classList.remove(HIDDEN_CLASSNAME);
   coursesTitle[0].classList.remove(HIDDEN_CLASSNAME);
   coursesTitle[1].classList.remove(HIDDEN_CLASSNAME);
   courses[0].classList.remove(HIDDEN_CLASSNAME);
@@ -50,6 +52,7 @@ if (savedUsername === null) {
   header.classList.remove(HIDDEN_CLASSNAME);
   sideBar.classList.remove(HIDDEN_CLASSNAME);
   mainTime.classList.remove(HIDDEN_CLASSNAME);
+  todoForm.classList.remove(HIDDEN_CLASSNAME);
   coursesTitle[0].classList.remove(HIDDEN_CLASSNAME);
   coursesTitle[1].classList.remove(HIDDEN_CLASSNAME);
   courses[0].classList.remove(HIDDEN_CLASSNAME);
