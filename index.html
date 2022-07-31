@@ -10,29 +10,34 @@
   <body>
     <section class="side-bar hidden">
       <div class="side-bar__elements">
-        <i class="fa-brands fa-github"></i>
+        <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
       </div>
       <div class="side-bar__elements">
-        <img src="https://nomadcoders.co/m.png" />
+        <a href="https://nomadcoders.co/" target="_blank"><img src="https://nomadcoders.co/m.png" /></a>
+        
         <!--<img src="https://nomadcoders.co/m.svg" />-->
       </div>
       <div class="side-bar__elements">
-        <img src="https://developer.mozilla.org/favicon-48x48.cbbd161b.png" />
+        <a href="https://developer.mozilla.org/ko/" target="_blank"><img src="https://developer.mozilla.org/favicon-48x48.cbbd161b.png" /></a>
+        
       </div>
       <div class="side-bar__elements">
-        <i class="fa-brands fa-discord"></i>
+        <a href="https://discord.com/" target="_blank"><i class="fa-brands fa-discord"></i></a>
       </div>
       <div class="side-bar__elements">
-        <i class="fa-solid fa-mug-hot"></i>
+        <button id="cocoa"><i class="fa-solid fa-mug-hot"></i></button>
       </div>
       <div class="side-bar__elements">
-        <i class="fa-brands fa-spotify"></i>
+        <button id="music"><i class="fa-solid fa-music"></i></button>
       </div>
       <div class="side-bar__elements">
-        <img src="https://flexboxfroggy.com/images/frog-green.svg" alt="" />
+        <a href="https://flexboxfroggy.com/#ko" target="_blank">
+          <img src="https://flexboxfroggy.com/images/frog-green.svg" alt="" />
+        </a>
+        
       </div>
       <div class="side-bar__elements">
-        <img src="https://cssgridgarden.com/images/carrots.svg" alt="" />
+        <a href="https://cssgridgarden.com/#ko" target="_blank"><img src="https://cssgridgarden.com/images/carrots.svg" alt="" /></a>
       </div>
       <div class="side-bar__elements">
         <i class="fa-solid fa-gear"></i>
@@ -42,9 +47,10 @@
       <header class="header hidden">
         <div class="header__column">
           <section class="main-screen__header__search">
-            <form>
-              <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            <form id="main-screen__header__search">
+              <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
               <input
+                id="search-input"
                 placeholder="Enter your search term..."
                 type="search"
                 name="search"
@@ -53,7 +59,7 @@
           </section>
         </div>
         <div class="header__column">
-          <section class="header__d-day">d-day</section>
+          <section class="header__d-day"></section>
           <section class="header__weather">
             <div class="header__weather__row">
               <img class="header__weather__icon"></img>
@@ -75,7 +81,13 @@
           <form id="login-form" class="hidden">
             <input required maxlength="15" type="text" />
           </form>
-          <h1 id="greeting" class="hidden"></h1>
+          <div class="main__greeting__typing">
+            <span class="typing hidden"></span>
+            <h1 id="greeting" class="hidden"></h1>
+          </div>
+          
+          
+          
         </section>
 
         
@@ -90,10 +102,34 @@
         </section>
         <span class="main__courses__title hidden">Courses</span>
         <section class="main__courses hidden">
-          <div class="main__courses__course">
+          
+          <a href="https://nomadcoders.co/kokoa-clone" target="_blank">
+            <div class="main__courses__course">
             <i class="fa-brands fa-html5"></i>
-          </div>
-          <div class="main__courses__course">
+          </div></a>
+          <a href="https://nomadcoders.co/css-layout-masterclass" target="_blank">
+            <div class="main__courses__course">
+            <i class="fa-brands fa-css3"></i>
+          </div></a>
+          <a href="https://nomadcoders.co/javascript-for-beginners" target="_blank">
+            <div class="main__courses__course">
+            <i class="fa-brands fa-square-js"></i>
+          </div></a>
+          <a href="https://nomadcoders.co/javascript-for-beginners-2" target="_blank">
+            <div class="main__courses__course">
+            <i class="fa-solid fa-palette"></i>
+          </div></a>
+          <a href="https://nomadcoders.co/wetube" target="_blank">
+            <div class="main__courses__course">
+            <i class="fa-brands fa-youtube"></i>
+          </div></a>
+          <a href="https://nomadcoders.co/git-for-beginners" target="_blank">
+            <div class="main__courses__course">
+              <i class="fa-brands fa-github-alt"></i>
+          </div></a>
+          
+          <!--
+            <div class="main__courses__course">
             <i class="fa-brands fa-css3"></i>
           </div>
           <div class="main__courses__course">
@@ -108,10 +144,12 @@
           <div class="main__courses__course">
             <i class="fa-brands fa-github-alt"></i>
           </div>
+          -->
+          
         </section>
       </main>
       <footer class="footer hidden">
-        <button class="footer__changeBtn">background-change</button>
+        <button class="footer__changeBtn"><i class="fa-solid fa-arrows-rotate"></i></button>
         <section class="footer__quote">
           <div id="quote">
             <span></span>
@@ -152,6 +190,9 @@
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/cocoa.js"></script>
+    
     <script
       src="https://kit.fontawesome.com/c560ecab76.js"
       crossorigin="anonymous"

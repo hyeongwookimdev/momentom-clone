@@ -18,3 +18,13 @@ bgImage.classList.add("bg-image");
 bgImage.src = `img/${chosenImage}`;
 
 document.body.appendChild(bgImage);
+
+const backChangeBtn = document.querySelector(".footer__changeBtn");
+
+function changeBack(event) {
+  event.preventDefault();
+  const changedBack = images[Math.floor(Math.random() * images.length)];
+  bgImage.src = `img/${changedBack}`;
+}
+
+backChangeBtn.addEventListener("click", changeBack);
